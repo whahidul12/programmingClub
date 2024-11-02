@@ -29,6 +29,7 @@
   grid-column: 1/3;
   grid-row: 2/3;
   padding-left: 10rem;
+  margin-top: -3rem;
 }
 .hero-heading {
   line-height: 4rem;
@@ -46,10 +47,16 @@
 .hero-link a {
   width: 5rem;
   height: 3rem;
-  background-color: aqua;
+  background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
   padding: 1rem;
   border-radius: 1rem;
   text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.hero-link a:hover {
+  background: linear-gradient(to right, #2c64fc 0%, #b927fc 100%);
+  border-radius: 0px;
 }
 .popUpBtn {
   display: grid;
