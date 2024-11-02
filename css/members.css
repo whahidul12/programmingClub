@@ -17,7 +17,7 @@ body {
 }
 
 .team-section h2 {
-  margin-top: 5rem;
+  margin-top: 1rem;
   font-size: 2.5em;
   margin-bottom: 1em;
   color: #333;
@@ -94,4 +94,10 @@ body {
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 1rem 0;
+}
+
+@media (max-width: 500px) {
+  .team-section h2 {
+    font-size: 2rem;
+  }
 }
