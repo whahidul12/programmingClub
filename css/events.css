@@ -1,0 +1,13 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+section {
+  height: 50vh;
+  width: 100%;
+}
+section h1 {
+  margin-top: 2rem;
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+}

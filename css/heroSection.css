@@ -64,8 +64,43 @@
   grid-column: 3/4;
   grid-row: 2/3;
 }
-.popUpBtn button {
-  margin: 0 auto;
+#openVideoBtn {
+  position: relative;
+  margin: -3rem auto 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #2c64fc 0%, #b927fc 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+#openVideoBtn::after,
+#openVideoBtn::before {
+  --pad: 0rem;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(185, 39, 252, 0.2);
+  top: var(--pad);
+  left: var(--pad);
+  bottom: var(--pad);
+  right: var(--pad);
+  border-radius: 50%;
+}
+#openVideoBtn::after {
+  transition: 0.1s;
+}
+#openVideoBtn::before {
+  transition: 0.05s;
+}
+#openVideoBtn:hover:before {
+  --pad: -1rem;
+}
+#openVideoBtn:hover::after {
+  --pad: -2rem;
 }
 
 @media screen and (max-width: 1200px) {
